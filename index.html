@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=The box-shadow property attaches one or more shadows to an element., initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        }
+        .box-shadow1{
+            box-shadow: 10px 10px grey;
+            margin: auto;
+        }
+        .box-shadow2{
+            box-shadow: 20px 20px 10px grey;
+            margin: auto;
+        }
+        .box-shadow3{
+            box-shadow: 20px 20px 50px 15px grey;
+            margin: auto;
+            margin: auto;
+        }
+       .box-shadow4{
+        box-shadow: 20px 20px 50px 10px rgb(255, 249, 88) inset;
+            margin: auto;
+      }
+      .transition{
+        width: 100%;
+        text-align: center;
+        margin-top:30px;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        gap: 3rem;
+      }
+      .tra-width{
+        width: 200px;
+        background-color: aqua;
+        padding: 20px;
+        transition: width 2s ease-in-out;
+      }
+      .tra-width:hover{
+        width: 300px;
+      }
+      .tra-height{
+        height: 50px;
+        width: 200px;
+        padding: 20px;
+        transition: height 2s;
+        background-color: blue;
+      }
+      .tra-height:hover{
+        height: 80px;
+      }
+      .transition-properties{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        margin-top: 30px;
+      }
+      .transition-ease{
+        height: 50px;
+        width: 200px
+        transition:all 1s linear 1s;
+        background-color: aquamarine;
+        
+      }
+      .transition-ease:hover{
+        height: 300px;
+      }
+      .transition-linear{
+        transition: all 2s linear;
+        background-color: blueviolet;
+      }
+      .transition-linear:hover{
+        width: 500px;
+      }
+      .transition-ease-in{
+        transition: all 2s ease-in;
+        background-color: chartreuse;
+      }
+      .transition-ease-in:hover{
+        width: 500px;
+      }
+      .transition-ease-in-out{
+        transition: all 2s ease-in-out;
+        background-color: darkorange;
+        /* transition: all 2s ease-in-out; */
+      }
+      .transition-ease-in-out:hover{
+       width: 500px;
+      }
+      .filter{
+        width: 1000px;
+        margin: auto;
+        display: flex;
+        /* flex-direction:row; */
+        flex-wrap: wrap;
+        gap: 1rem;
+        height: 500px;
+        margin-top: 30px;
+      }
+      .img-1{
+        width: 23.3%;
+        margin: auto;
+        }
+        .img-2{
+            filter: blur(4px);
+            width: 23.3%;
+            margin: auto;
+        }
+      .img-3{
+            filter: brightness(100%);
+            width: 23.3%;
+            margin: auto;
+        }
+        .img-4{
+            filter: contrast(180%);
+            width: 23.3%;
+            margin: auto;
+        }
+        .img-5{
+            filter: grayscale(100%);
+            width: 23.3%;
+            margin: auto;
+        }
+        .img-6{
+            filter: hue-rotate(180deg);
+            width: 23.3%;
+            margin: auto;
+        }
+        .img-7{
+            filter: invert(100%);
+            width: 23.3%;
+            margin: auto;
+        }
+        .img-8{
+            filter: opacity(50%);width: 23.3%;
+            margin: auto;
+        }
+        .img-9{
+            filter: saturate(7);
+            width: 23.3%;
+            margin: auto;
+        }
+        .img-10{
+            filter: sepia(100%);
+            width: 23.3%;
+            margin: auto;
+        }
+        .img-11{
+            filter: drop-shadow(8px 8px 10px green);
+            width: 23.3%;
+            margin: auto;
+        }
+      img{
+        width:100%;
+        /* height: 200px; */
+      }
+    </style>
+</head>
+<body>
+                                   <!-- box-shadow -->
+
+              <!-- none|h-offset v-offset blur spread color |inset|initial|inherit -->
+    
+
+  <section class="container">
+
+                <p> The box-shadow property attaches one or more shadows to an element.</p>
+    <div class="box-shadow1">
+        <p style="border: 1px solid black ; width: 500px; padding: 60px;text-align: center;margin: auto;">box-shadow</p>
+    </div>
+    <div class="box-shadow2">
+        <p style="border: 1px solid black ; width: 500px; margin: auto; padding: 60px;text-align: center;">box-shadow</p>
+    </div>
+    <div class="box-shadow3">
+        <p style="border: 1px solid black ;margin: auto; width: 500px; padding: 60px;text-align: center;">box-shadow</p>
+    </div>
+    <div class="box-shadow4">
+        <p style="border: 1px solid black ;margin: auto; width: 500px; padding: 60px;text-align: center;">box-shadow</p>
+    </div>
+    <div class="box-shadow5">
+        <p style="border: 1px solid black ;margin: auto; width: 500px; padding: 60px;text-align: center;">box-shadow</p>
+    </div>
+</section>
+                              <!-- Transitions -->
+                        <!-- 
+                            transition-delay
+                            transition-duration
+                            transition-property
+                            transition-timing-function
+                                                 -->
+
+
+              <!-- To create a transition effect, you must specify two things -->
+
+                    <!-- 1. the CSS property you want to add an effect to -->
+                    <!-- 2. the duration of the effect                    -->
+
+                    <section class="transition">
+                    <div class="tra-width">
+                        <p>tra-width</p>
+                    </div>
+                    <div class="tra-height">
+                        <p>tra-height</p>
+                    </div>
+
+                </section>
+<!-- 
+                                Specify the Speed Curve of the Transition
+
+                The transition-timing-function property specifies the speed curve of the transition effect.
+                
+                The transition-timing-function property can have the following values -->
+<!--                 
+                1.ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+                2.linear - specifies a transition effect with the same speed from start to end
+                3.ease-in - specifies a transition effect with a slow start
+                4.ease-out - specifies a transition effect with a slow end
+                5.ease-in-out - specifies a transition effect with a slow start and end
+                6.cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function -->
+
+                <section class="transition-properties">
+                    <div class="transition-ease">
+                        <p>transition-ease</p>
+                    </div>
+                    <div class="transition-linear">
+                        <p style="width:200px; height: 100px; text-align: center;">transition-linear</p>
+                    </div>
+                    <div class="transition-ease-in">
+                        <p style="width:200px; height: 100px; text-align: center;">transition-ease-in</p>
+                    </div>
+                    <div class="transition-ease-in-out">
+                        <p style="width:200px; height: 100px; text-align: center;">transition-ease-in-out</p>
+                    </div>
+                </section>
+                                                <!-- filter -->
+
+      <!-- The filter property defines visual effects (like blur and saturation) to an element (often <img>). -->
+
+
+                                         <!-- filteproperties -->
+
+
+     <!-- filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() -->
+
+           <!-- hue-rotate() | invert() | opacity() | saturate() | sepia() | url() -->
+
+                <section class="filter">
+                    <div class="img-1">
+                        <img src="../git-Box-shadow-transition-filter/images/img.jpg" alt="">
+                    </div>
+                    <div class="img-2">
+                        <img src="../git-Box-shadow-transition-filter/images/img.jpg" alt="">
+                    </div>
+                    <div class="img-3">
+                        <img src="../git-Box-shadow-transition-filter/images/img.jpg" alt="">
+                    </div>
+                    <div class="img-4">
+                        <img src="../git-Box-shadow-transition-filter/images/img.jpg" alt="">
+                    </div>
+                    <div class="img-5">
+                        <img src="../git-Box-shadow-transition-filter/images/img.jpg" alt="">
+                    </div>
+                    <div class="img-6"><img src="../git-Box-shadow-transition-filter/images/img.jpg" alt="">
+                    </div>
+                    <div class="img-7">
+                        <img src="../git-Box-shadow-transition-filter/images/img.jpg" alt="">
+                    </div>
+                    <div class="img-8">
+                        <img src="../git-Box-shadow-transition-filter/images/img.jpg" alt="">
+                    </div>
+                    <div class="img-9">
+                        <img src="../git-Box-shadow-transition-filter/images/img.jpg" alt="">
+                    </div>
+                    <div class="img-10">
+                        <img src="../git-Box-shadow-transition-filter/images/img.jpg" alt="">
+                    </div>
+                    <div class="img-11">
+                        <img src="../git-Box-shadow-transition-filter/images/img.jpg" alt="">
+                    </div>
+                </section>
+
+</body>
+</html>
